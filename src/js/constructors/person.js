@@ -1,8 +1,8 @@
 function Person (object) {
   object = object || {};
   this.cool = object.cool !== undefined;
-  this.pet = function(dog_petted){dog_petted.status = "happy"}
-  this.feed = function(dog_fed){dog_fed.hungry = false}
-};
+  this.pet = function(dogPetted){dogPetted.status = "happy";};
+  this.feed = function(dogFed){dogFed.hungry = false;};
+}
 
 export { Person };
