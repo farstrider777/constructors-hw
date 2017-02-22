@@ -11,13 +11,12 @@ function Human (name){
   this.hasCoffee = false;
   this.buy = function(coffeeBought){
     coffeeBought.full = false;
-    coffeeBought.empty = false;
+    coffeeBought.empty = false || coffeeBought.name === "Triple Shot Mocha Frappucino";
     this.hasCoffee = true;
 
   };
   this.drink = function(){
     this.alertness += .35;
-
   };
 }
 
