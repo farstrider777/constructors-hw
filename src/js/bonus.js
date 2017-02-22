@@ -8,18 +8,24 @@ function Human (name){
   this.alertness = 0;
   this.hasCoffee = false;
   this.needsCoffee = true;
+  this.hasCoffee = false;
   this.buy = function(coffeeBought){
     coffeeBought.full = false;
-    console.log(coffeeBought);
+    coffeeBought.empty = false;
+    this.hasCoffee = true;
+
   };
   this.drink = function(){
-    this.alertness = .35;
+    this.alertness += .35;
+
   };
 }
 
 function Coffee (coffeeName){
   this.name = coffeeName;
   this.full = true;
+
+
 }
 ///
 ///
